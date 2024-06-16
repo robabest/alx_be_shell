@@ -1,190 +1,264 @@
-0. Script: 0-switch_user
-This script switches the current user to the user betty using exactly 8 characters for the command.
+---
+#### 0. Script: `0-switch_user`
 
-Instructions:
-Create the Script:
+This script switches the current user to the user `betty` using exactly 8 characters for the command.
 
-Open a text editor and create a new file named 6-switch_user.
-Add Script Content:
+#### Instructions:
 
-Copy and paste the following lines into 6-switch_user:
+1. **Create the Script:**
+   - Open a text editor and create a new file named `6-switch_user`.
 
-#!/bin/bash
-su betty
-Save and Close:
+2. **Add Script Content:**
+   - Copy and paste the following lines into `6-switch_user`:
 
-Save the file and close the text editor.
-Make Script Executable:
+     ```bash
+     #!/bin/bash
+     su betty
+     ```
 
-In your terminal, navigate to the directory where 6-switch_user is located.
+3. **Save and Close:**
+   - Save the file and close the text editor.
 
-Run the following command to make the script executable:
+4. **Make Script Executable:**
+   - In your terminal, navigate to the directory where `6-switch_user` is located.
+   - Run the following command to make the script executable:
 
-chmod +x 6-switch_user
-Run the Script:
+     ```bash
+     chmod +x 6-switch_user
+     ```
 
-Execute the script by running:
+5. **Run the Script:**
+   - Execute the script by running:
 
-./6-switch_user
-File Management and User Switching Scripts
+     ```bash
+     ./6-switch_user
+     ```
+
+### File Management and User Switching Scripts
+
 This repository contains scripts for managing files and switching users in a Linux environment.
 
-1. Script: 1-who_am_i
+#### 1. Script: `1-who_am_i`
+
 This script prints the effective username of the current user.
 
-Instructions:
-Create the Script:
+#### Instructions:
 
-Open a text editor and create a new file named 1-who_am_i.
-Add Script Content:
+1. **Create the Script:**
+   - Open a text editor and create a new file named `1-who_am_i`.
 
-Copy and paste the following lines into 1-who_am_i:
+2. **Add Script Content:**
+   - Copy and paste the following lines into `1-who_am_i`:
 
-#!/bin/bash
-whoami
-Save and Close:
+     ```bash
+     #!/bin/bash
+     whoami
+     ```
 
-Save the file and close the text editor.
-Make Script Executable:
+3. **Save and Close:**
+   - Save the file and close the text editor.
 
-In your terminal, navigate to the directory where 1-who_am_i is located.
+4. **Make Script Executable:**
+   - In your terminal, navigate to the directory where `1-who_am_i` is located.
+   - Run the following command to make the script executable:
 
-Run the following command to make the script executable:
+     ```bash
+     chmod +x 1-who_am_i
+     ```
 
-chmod +x 1-who_am_i
-Run the Script:
+5. **Run the Script:**
+   - Execute the script by running:
 
-Execute the script by running:
+     ```bash
+     ./1-who_am_i
+     ```
 
-./1-who_am_i
-Explanation:
-The script uses the whoami command to print the effective username of the current user.
-2. Script: 2-create_hello
-This script creates an empty file named hello in the working directory.
+#### Explanation:
 
-Instructions:
-Create the Script:
+- The script uses the `whoami` command to print the effective username of the current user.
 
-Open a text editor and create a new file named 2-create_hello.
-Add Script Content:
+---
 
-Copy and paste the following lines into 2-create_hello:
+#### 2. Script: `2-create_hello`
 
-#!/bin/bash
-touch hello
-Save and Close:
+This script creates an empty file named `hello` in the working directory.
 
-Save the file and close the text editor.
-Make Script Executable:
+#### Instructions:
 
-In your terminal, navigate to the directory where 2-create_hello is located.
+1. **Create the Script:**
+   - Open a text editor and create a new file named `2-create_hello`.
 
-Run the following command to make the script executable:
+2. **Add Script Content:**
+   - Copy and paste the following lines into `2-create_hello`:
 
-chmod +x 2-create_hello
-Run the Script:
+     ```bash
+     #!/bin/bash
+     touch hello
+     ```
 
-Execute the script by running:
+3. **Save and Close:**
+   - Save the file and close the text editor.
 
-./2-create_hello
-Explanation:
-The script uses the touch command to create an empty file named hello in the current directory.
-3. Script: 3-add_execute_permission
-This script adds execute permission to the owner of the file hello.
+4. **Make Script Executable:**
+   - In your terminal, navigate to the directory where `2-create_hello` is located.
+   - Run the following command to make the script executable:
 
-Instructions:
-Create the Script:
+     ```bash
+     chmod +x 2-create_hello
+     ```
 
-Open a text editor and create a new file named 3-add_execute_permission.
-Add Script Content:
+5. **Run the Script:**
+   - Execute the script by running:
 
-Copy and paste the following lines into 3-add_execute_permission:
+     ```bash
+     ./2-create_hello
+     ```
 
-#!/bin/bash
-chmod u+x hello
-Save and Close:
+#### Explanation:
 
-Save the file and close the text editor.
-Make Script Executable:
+- The script uses the `touch` command to create an empty file named `hello` in the current directory.
 
-In your terminal, navigate to the directory where 3-add_execute_permission is located.
+---
 
-Run the following command to make the script executable:
+#### 3. Script: `3-add_execute_permission`
 
-chmod +x 3-add_execute_permission
-Run the Script:
+This script adds execute permission to the owner of the file `hello`.
 
-Execute the script by running:
+#### Instructions:
 
-./3-add_execute_permission
-Explanation:
-The script uses the chmod command to add execute (+x) permission to the owner (u) of the file hello.
-4. Script: 4-set_permissions
-This script sets specific permissions for the file hello.
+1. **Create the Script:**
+   - Open a text editor and create a new file named `3-add_execute_permission`.
 
-Instructions:
-Create the Script:
+2. **Add Script Content:**
+   - Copy and paste the following lines into `3-add_execute_permission`:
 
-Open a text editor and create a new file named 4-set_permissions.
-Add Script Content:
+     ```bash
+     #!/bin/bash
+     chmod u+x hello
+     ```
 
-Copy and paste the following lines into 4-set_permissions:
+3. **Save and Close:**
+   - Save the file and close the text editor.
 
-#!/bin/bash
-chmod ug+x,o+r hello
-Save and Close:
+4. **Make Script Executable:**
+   - In your terminal, navigate to the directory where `3-add_execute_permission` is located.
+   - Run the following command to make the script executable:
 
-Save the file and close the text editor.
-Make Script Executable:
+     ```bash
+     chmod +x 3-add_execute_permission
+     ```
 
-In your terminal, navigate to the directory where 4-set_permissions is located.
+5. **Run the Script:**
+   - Execute the script by running:
 
-Run the following command to make the script executable:
+     ```bash
+     ./3-add_execute_permission
+     ```
 
-chmod +x 4-set_permissions
-Run the Script:
+#### Explanation:
 
-Execute the script by running:
+- The script uses the `chmod` command to add execute (`+x`) permission to the owner (`u`) of the file `hello`.
 
-./4-set_permissions
-Explanation:
-The script uses the chmod command with symbolic notation to set execute permission (+x) for the owner (u) and group owner (g) of the file hello, and read permission (+r) for other users (o).
-5. Script: 5-set_mode
-This script sets the mode of the file hello to -rwxr-x-wx.
+---
 
-Instructions:
-Create the Script:
+#### 4. Script: `4-set_permissions`
 
-Open a text editor and create a new file named 5-set_mode.
-Add Script Content:
+This script sets specific permissions for the file `hello`.
 
-Copy and paste the following lines into 5-set_mode:
+#### Instructions:
 
-#!/bin/bash
-chmod 751 hello
-Save and Close:
+1. **Create the Script:**
+   - Open a text editor and create a new file named `4-set_permissions`.
 
-Save the file and close the text editor.
-Make Script Executable:
+2. **Add Script Content:**
+   - Copy and paste the following lines into `4-set_permissions`:
 
-In your terminal, navigate to the directory where 5-set_mode is located.
+     ```bash
+     #!/bin/bash
+     chmod ug+x,o+r hello
+     ```
 
-Run the following command to make the script executable:
+3. **Save and Close:**
+   - Save the file and close the text editor.
 
-chmod +x 5-set_mode
-Run the Script:
+4. **Make Script Executable:**
+   - In your terminal, navigate to the directory where `4-set_permissions` is located.
+   - Run the following command to make the script executable:
 
-Execute the script by running:
+     ```bash
+     chmod +x 4-set_permissions
+     ```
 
-./5-set_mode
-Explanation:
-The script uses the chmod command with numeric mode (751) to set specific permissions for the file hello:
-7 for the owner (rwx),
-5 for the group (r-x),
-1 for others (--x).
-Explanation:
-The script uses the su command to switch the current user to betty, fulfilling the requirement of using exactly 8 characters for the command.
-Verification
-To verify the scripts have executed correctly, you can check the output or the existence of the hello file and its permissions using commands such as ls -l hello.
+5. **Run the Script:**
+   - Execute the script by running:
+
+     ```bash
+     ./4-set_permissions
+     ```
+
+#### Explanation:
+
+- The script uses the `chmod` command with symbolic notation to set execute permission (`+x`) for the owner (`u`) and group owner (`g`) of the file `hello`, and read permission (`+r`) for other users (`o`).
+
+---
+
+#### 5. Script: `5-set_mode`
+
+This script sets the mode of the file `hello` to `-rwxr-x-wx`.
+
+#### Instructions:
+
+1. **Create the Script:**
+   - Open a text editor and create a new file named `5-set_mode`.
+
+2. **Add Script Content:**
+   - Copy and paste the following lines into `5-set_mode`:
+
+     ```bash
+     #!/bin/bash
+     chmod 751 hello
+     ```
+
+3. **Save and Close:**
+   - Save the file and close the text editor.
+
+4. **Make Script Executable:**
+   - In your terminal, navigate to the directory where `5-set_mode` is located.
+   - Run the following command to make the script executable:
+
+     ```bash
+     chmod +x 5-set_mode
+     ```
+
+5. **Run the Script:**
+   - Execute the script by running:
+
+     ```bash
+     ./5-set_mode
+     ```
+
+#### Explanation:
+
+- The script uses the `chmod` command with numeric mode (`751`) to set specific permissions for the file `hello`:
+  - `7` for the owner (`rwx`),
+  - `5` for the group (`r-x`),
+  - `1` for others (`--x`).
+
+---
+
+
+#### Explanation:
+
+- The script uses the `su` command to switch the current user to `betty`, fulfilling the requirement of using exactly 8 characters for the command.
+
+---
+
+### Verification
+
+To verify the scripts have executed correctly, you can check the output or the existence of the `hello` file and its permissions using commands such as `ls -l hello`.
+
+---
 
 These scripts provide basic file management functionalities and user switching capabilities in a Linux environment using Bash scripting. Each script performs a specific task related to creating files, managing their permissions, and switching users effectively.
+
+---
